@@ -4,6 +4,7 @@ describe "Check if leads are added properly -> " do
   let(:old_lead_status_name) { "New" }
   
   before(:all) do 
+    # there is no 'status' in Faker
     # first_name will have format close to lead status 
     @new_lead_status_name = Faker::Name.first_name 
     @new_lead_name = "Zzzzzzaa" #Faker::Name.last_name
